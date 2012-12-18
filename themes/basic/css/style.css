@@ -1,0 +1,207 @@
+
+/** Font styles 
+---------------------------------*/
+
+body {
+  margin: 0;
+  font-family: 'Cardo', serif;
+  font-size: small;
+  font-style: normal;
+  color: #504f4f;
+}
+
+
+/* Links */
+
+a:link, a:visited {
+  color: #2E2F2F;
+  text-decoration: none;
+}
+
+a:hover, a:active {
+  color: #999;
+  text-decoration: underline;
+}
+
+/* Titles  */
+
+h1, h2, h3, h4, h5, h6 {line-height:1.3em;}
+
+h1 {
+	font-size: 1.8em;
+	font-weight:300;
+	padding: 0 0 0.5em;
+	margin: 0;
+}
+
+h2 {
+margin-bottom:0.35em;
+font-family: 'Cardo', serif;
+  font-size: 11px;
+  font-weight: 400;
+  text-shadow: none;
+  text-decoration: none;
+  text-transform: uppercase;
+  letter-spacing: 0em;
+  word-spacing: 0em;
+  line-height: 1.2;
+  font-style: normal;
+}
+
+
+h3 {font-size:.9em;margin-bottom:1em;}
+h4 {font-size:.8em;margin-bottom:0.8em;}
+h5 {font-size:.7em;font-weight:600;margin-bottom:0;}
+h6 {font-size:.6em;font-weight:bold;}
+
+/* Paragraph Styles */
+
+p {
+  margin:0 0 1em 0;
+}
+
+.content p {margin: 9px 100px 0px 0px; line-height: 14px;}
+
+/* List Styles  */
+
+ul, ol {
+  margin-left: 0;
+  padding-left: 2em;
+}
+
+/* Table Styles  */
+
+table {
+	width: 99%;
+}
+tr.even td, tr.odd td {
+	padding: 10px 5px;
+}
+tr.odd {
+	background-color: #fff;
+}
+
+/* Code */
+
+pre, code, tt {font:1em 'andale mono', 'lucida console', monospace;line-height:1.5;}
+
+pre {
+	background-color: #efefef;
+	display: block;
+	padding: 5px;
+	margin: 5px 0;
+	border: 1px solid #aaa;
+}
+
+/* List Styles */
+
+ul          { list-style-type: disc; }
+ul ul       { list-style-type: circle; }
+ul ul ul    { list-style-type: square; }
+ul ul ul ul { list-style-type: circle; }
+ol          { list-style-type: decimal; }
+ol ol       { list-style-type: lower-alpha; }
+ol ol ol    { list-style-type: decimal; }
+
+/* Abbreviation */
+
+abbr {
+  border-bottom: 1px dotted #666;
+  cursor: help;
+  white-space: nowrap;
+}
+
+/* UI improvments  */
+
+#edit-title{
+	font-size: 24px;
+}
+#system-themes-form img{
+	width:100px;
+}
+.form-item .description{
+	font-style:italic;
+	line-height:1.2em;
+	font-size:0.8em;
+	margin-top:5px;
+	color:#777;
+}
+#edit-delete{
+	color:#c00;
+}
+
+/**
+ * Console, style from Slate theme
+ */
+div.messages {
+  padding: 9px;
+  margin: 1em 0em 0em 0em;
+  color: #036;
+  background: #bdf;
+  border: 1px solid #ace;
+}
+div.warning {
+  color: #840;
+  background: #fe6;
+  border-color: #ed5;
+  margin: 80px 0px 20px 0px; 
+}
+div.error {
+  color: #fff;
+  background: #e63;
+  border-color: #d52;
+  margin-top: 80px;
+}
+div.status {
+  color: #360;
+  background: #cf8;
+  border-color: #be7;
+}
+
+/** Most custom stuff down here*/
+
+div#under-image {display: inline; float: left;}
+
+.captions {
+
+margin: 0px 0px 5px 0px;
+color: #333;
+width: 650px;
+font-family: 'Cardo', serif;
+font-size: 12px;
+font-style: italic;
+text-shadow: none;
+text-decoration: none;
+text-transform: lowercase;
+letter-spacing: 0em;
+word-spacing: 0em;
+line-height: 1.2;
+}
+
+#teaser-blog-date #teaser-blog-title  {
+font-family: 'Cardo', serif;
+font-size: 12px;
+font-style: normal;
+text-shadow: none;
+font-weight: 100;
+text-decoration: none;
+text-transform: uppercase;
+letter-spacing: 0em;
+word-spacing: 0em;
+line-height: 1.2;
+}
+
+
+
+.submitted {font-size: xx-small; float: right; font-style: italic;
+
+.node-inner h2 a {color: #000;}
+
+.node-inner h2 a:hover {color: #999; text-decoration: underline;}
+
+div.admin-panel a {
+color: blue;
+
+}
+
+.views-field-body a:link {color: #1079B1;}

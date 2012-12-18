@@ -1,0 +1,226 @@
+/** Layout
+---------------------------------
+*  Using a negative margin technique, adapted from ZEN. The page is loaded by this order:
+*  
+*  1. Header
+*  2. Content
+*  3. Navigation menus
+*  4. Sidebar Left
+*  5. Sideabr Right
+*	
+*/
+
+#page {
+	width: 960px; /* edit to change the width of the page */
+	margin: 0 auto; /* remove 'auto' and the width to switch to a fluid width */
+}
+
+/** LAYOUT RULES
+---------------------------------
+*  do not change if you're not sure you know what you're doing
+*/
+
+#content {
+  float: left;
+  width: 90%;
+  margin-right: -100%;
+  padding: 0;
+}
+
+#content-inner {}
+
+.sidebar {
+  float: left;
+}
+#sidebar-second {
+  float: right;
+}
+#footer {
+  float: none;
+  clear: both;
+}
+
+/* Layout Helpers */
+
+#header, #footer, .mission, .breadcrumb, .node {
+  clear: both;
+}
+
+/** Sidebars width
+---------------------------------
+*  Changing the width of the sidebars is dead easy, just change the
+*  values below corresponding to the sidebar you want to modify.
+*  Make sure you keep negative values as negative values.
+*  For example, if I want to increase the width of the left sidebar
+*  to 300px, I would have to change each '190' to '300'.
+*/
+
+.two-sidebars .center,
+.sidebar-left .center {
+  margin-left: 185px;     /* LEFT value */
+}
+#sidebar-first {
+  width: 190px;           /* LEFT value */
+	margin-right: -190px;    /* negative LEFT value */
+}
+.two-sidebars .center,
+.sidebar-right .center {
+  margin-right: 200px;    /* RIGHT value */
+}
+#sidebar-second {
+  width: 200px;           /* RIGHT value */
+}
+
+/** Columns inner
+---------------------------------
+*  You can change the padding inside the columns without changing the
+*  width of them by just usinbg the INNER div of each column
+*/
+
+.inner {
+	padding: 0px;
+}
+
+/** Navigation styles
+---------------------------------
+*  The navigation is loaded after the content, so we need to make space
+*  for it, equal to its height, so if you change the height of the navigation,
+*  remember to adapt the margin top of the content and sidebars.
+*/
+
+#navigation {
+  float: left;
+  margin-left: 0;
+  margin-right: -100%;
+  padding: 0;
+  width: 100%;
+}
+.with-navigation #content,
+.with-navigation .sidebar {
+  /* Navigation Height */
+  
+}
+
+#navigation {
+    float: left;
+    height: 50px;
+    margin: 10px 0 0;
+}
+
+#primary {font-size: 110%;font-variant: small-caps;font-weight: bold;left: 61%;position: absolute;top: 31px;}
+/*.node .image-attach-body {float: right; margin-right: 125px;}*/
+
+/*custom stuff below*/
+
+#block-menu-menu-content-maintenance-menu {margin-right: 40px;}
+
+#divider {text-align: center;}
+
+#divider hr {border: dotted thin silver; margin: 35px 0px 35px 165px; width: 50%;}
+
+#logo-title {margin: 0px 0px 0px 185px;}
+
+#logo {margin-left: 183px; position: relative; float: left;}
+
+div.views-admin-links ul { color: black; display: none; }
+
+.block-edit ul {display: none;}
+
+.body-text {float: left; margin: 15px 0px 0px 0px}
+
+.node-inner: {float: left;}
+
+.node .image-attach-body {float: left;}
+
+.body-image {float: left; margin: 0px 8px 0px 0px; }
+
+.all-attached-images {min-height: 300px; float: left;}
+
+.links {
+
+margin: 0px 0px 30px 0px;
+float: left;
+font-family: 'Cardo', serif;
+font-size: 12px;
+font-style: italic;
+font-weight: 400;
+text-shadow: none;
+text-decoration: none;
+text-transform: lowercase;
+letter-spacing: 0em;
+word-spacing: 0em;
+line-height: 1.2;
+}
+
+#comments {
+
+font-family: 'Cardo', serif;
+font-size: 12px;
+font-style: italic;
+font-weight: 400;
+text-shadow: none;
+text-decoration: none;
+text-transform: lowercase;
+letter-spacing: 0em;
+word-spacing: 0em;
+line-height: 1.2;
+
+}
+
+
+.comment-inner {margin: 35px 0px 0px 0px;}
+
+.comment-inner .content p {margin: 0px; padding: 0px;}
+
+.content {float: left;}
+
+.views-field-title {margin: 35px 0px 10px 0px;
+font-family: 'Cardo', serif;
+font-size: 11px;
+font-weight: 400;
+text-shadow: none;
+text-decoration: none;
+text-transform: uppercase;
+letter-spacing: 0em;
+word-spacing: 0em;
+line-height: 1.2;
+font-style: normal;
+}
+
+#teaser-blog-title {float: right;}
+
+#teaser-blog-image {margin: 0px 0px 50px 0px; float: left; clear: both;}
+
+.view-content {margin-top: 85px;}
+
+.views-row h2 {
+float: right;
+padding-right: 200px;
+clear: both;
+width: 200px;
+font-family: 'Cardo', serif;
+font-size: 11px;
+font-weight: 400;
+text-shadow: none;
+text-decoration: none;
+text-transform: uppercase;
+letter-spacing: 0em;
+word-spacing: 0em;
+line-height: 1.2;
+font-style: normal;
+}
+
+.views-field-field-caption-top-value {margin-bottom: 10px;}
+
+.node-type-list {margin-top: 50px;}
+
+.view-filters {margin-top: 30px; }
+
+#node-1 {margin-top: 30px;}
+
+.views-field-comments-link {margin-top: 30px;}
+.views-field-comments-link a {text-decoration: underline; }
+
+#content-area #user-login {margin-left: 125px;}
+
+#content-header {margin-top: 100px;}
